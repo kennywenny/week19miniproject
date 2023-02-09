@@ -17,6 +17,7 @@ window.deleteCard = (e) => {
 form.addEventListener('submit', (event) => {
   // handle the form data
   event.preventDefault();
+  console.log('Hello')
   const name = form.elements['name'].value;
   const home = form.elements['home-phone'].value;
   const cell = form.elements['cell-phone'].value;
@@ -36,6 +37,7 @@ form.addEventListener('submit', (event) => {
 
 const fetchCards = async () => {
 // Grab card data from IndexedDB
+  console.log('HELLO')
   const result = await getDb();
 
   let card = ` `;
